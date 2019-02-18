@@ -100,5 +100,6 @@ clean:
 	#$(MAKE) -s -C demo/gateway clean
 
 instaal:
+	cp demo/whois/bacwi /usr/bin
 
 
