@@ -64,40 +64,40 @@ library:
 demos:
 	$(MAKE) -s -C demo all
 
-gateway:
-	$(MAKE) -B -s -C demo gateway
+#gateway:
+#	$(MAKE) -B -s -C demo gateway
 
-mstpcap:
-	$(MAKE) -B -s -C demo mstpcap
+#mstpcap:
+#	$(MAKE) -B -s -C demo mstpcap
 
-router:
-	$(MAKE) -s -C demo router
+#router:
+#	$(MAKE) -s -C demo router
 
-router-ipv6:
-	$(MAKE) -B -s -C demo router-ipv6
+#router-ipv6:
+#	$(MAKE) -B -s -C demo router-ipv6
 
 # Add "ports" to the build, if desired
-ports:	atmega168 bdk-atxx4-mstp at91sam7s stm32f10x
-	@echo "Built the ARM7 and AVR ports"
+#ports:	atmega168 bdk-atxx4-mstp at91sam7s stm32f10x
+#	@echo "Built the ARM7 and AVR ports"
 
-atmega168: ports/atmega168/Makefile
-	$(MAKE) -s -C ports/atmega168 clean all
+#atmega168: ports/atmega168/Makefile
+#	$(MAKE) -s -C ports/atmega168 clean all
 
-at91sam7s: ports/at91sam7s/Makefile
-	$(MAKE) -s -C ports/at91sam7s clean all
+#at91sam7s: ports/at91sam7s/Makefile
+#	$(MAKE) -s -C ports/at91sam7s clean all
 
-bdk-atxx4-mstp: ports/bdk-atxx4-mstp/Makefile
-	$(MAKE) -s -C ports/bdk-atxx4-mstp clean all
+#bdk-atxx4-mstp: ports/bdk-atxx4-mstp/Makefile
+#	$(MAKE) -s -C ports/bdk-atxx4-mstp clean all
 
-stm32f10x: ports/stm32f10x/Makefile
-	$(MAKE) -s -C ports/stm32f10x clean all
+#stm32f10x: ports/stm32f10x/Makefile
+#	$(MAKE) -s -C ports/stm32f10x clean all
 
 clean:
 	$(MAKE) -s -C lib clean
 	$(MAKE) -s -C demo clean
-	$(MAKE) -s -C demo/router clean
-	$(MAKE) -s -C demo/router-ipv6 clean
-	$(MAKE) -s -C demo/gateway clean
+	#$(MAKE) -s -C demo/router clean
+	#$(MAKE) -s -C demo/router-ipv6 clean
+	#$(MAKE) -s -C demo/gateway clean
 
 install:
 	echo "install"
