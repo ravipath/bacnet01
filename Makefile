@@ -99,7 +99,7 @@ clean:
 	#$(MAKE) -s -C demo/router-ipv6 clean
 	#$(MAKE) -s -C demo/gateway clean
 
-instaal:
+install:
 	cp demo/whois/bacwi /usr/bin
 
 
