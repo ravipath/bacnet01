@@ -99,6 +99,6 @@ clean:
 	#$(MAKE) -s -C demo/router-ipv6 clean
 	#$(MAKE) -s -C demo/gateway clean
 
-install:
-	echo "install"
+instaal:
+
 
